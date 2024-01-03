@@ -1,0 +1,13 @@
+dist
+node_modules
+src/App.jsx
+src/main.jsx
+.babelrc
+.eslintignore
+.eslintrc
+.gitignore
+.npmignore
+.prettierignore
+.prettierrc
+index.html
+webpack.config.js
