@@ -1,6 +1,7 @@
 dist
 node_modules
 src/App.jsx
+src/App.css
 src/main.jsx
 .babelrc
 .eslintignore
