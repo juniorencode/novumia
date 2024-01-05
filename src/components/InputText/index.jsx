@@ -1,7 +1,6 @@
 // eslint-disable-next-line
 import React, { useId } from 'react'
 import PropTypes from 'prop-types'
-import '../main.css'
 import './InputText.css'
 
 const InputText = ({ label, caption, error, placeholder, disabled }) => {
