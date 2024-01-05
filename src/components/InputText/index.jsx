@@ -47,4 +47,4 @@ InputText.propTypes = {
   onChange: PropTypes.func
 }
 
-export default InputText
+export { InputText }

@@ -50,4 +50,4 @@ InputNumber.propTypes = {
   onChange: PropTypes.func
 }
 
-export default InputNumber
+export { InputNumber }
