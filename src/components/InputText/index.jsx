@@ -7,6 +7,7 @@ const InputText = ({
   label,
   caption,
   error,
+  name,
   placeholder,
   disabled,
   onChange
@@ -26,6 +27,7 @@ const InputText = ({
         </div>
       )}
       <input
+        name={name}
         id={id}
         className="InputText__input"
         type="text"
@@ -42,6 +44,7 @@ InputText.propTypes = {
   label: PropTypes.string,
   caption: PropTypes.string,
   error: PropTypes.string,
+  name: PropTypes.string,
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
   onChange: PropTypes.func
