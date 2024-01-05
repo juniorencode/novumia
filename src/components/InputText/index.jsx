@@ -3,7 +3,14 @@ import React, { useId } from 'react'
 import PropTypes from 'prop-types'
 import './InputText.css'
 
-const InputText = ({ label, caption, error, placeholder, disabled }) => {
+const InputText = ({
+  label,
+  caption,
+  error,
+  placeholder,
+  disabled,
+  onChange
+}) => {
   const id = useId()
 
   return (
@@ -24,6 +31,7 @@ const InputText = ({ label, caption, error, placeholder, disabled }) => {
         type="text"
         placeholder={placeholder}
         disabled={disabled}
+        onChange={onChange}
       />
       {error && <span className="InputText__error">{error}</span>}
     </div>
@@ -35,7 +43,8 @@ InputText.propTypes = {
   caption: PropTypes.string,
   error: PropTypes.string,
   placeholder: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func
 }
 
 export default InputText

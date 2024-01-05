@@ -1,11 +1,18 @@
+import { useState } from 'react'
 import { InputText } from './index.js'
 import './App.css'
 
 const App = () => {
+  const [name, setName] = useState('')
+
   return (
     <div className="formi">
       <InputText placeholder="This is a test..!!" />
-      <InputText label="Name" />
+      <InputText
+        label="Name"
+        value={name}
+        onChange={e => setName(e.target.value)}
+      />
       <InputText label="LastName" caption="This is a random information" />
       <InputText label="Address" error="This is a error message" />
       <InputText
